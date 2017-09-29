@@ -29,3 +29,5 @@
 (add-hook 'c-mode-common-hook
   (lambda() 
     (local-set-key  (kbd "C-c o") 'ff-find-other-file)))
+;; Save/Restore files
+(desktop-save-mode 1)
