@@ -60,3 +60,15 @@
             (cond ((looking-at "\\s(") (forward-list 1) (backward-char 1))
                   ((looking-at "\\s)") (forward-char 1) (backward-list 1))
                   (t (self-insert-command (or arg 1)))))
+
+
+;; Add a cc-mode style for editing LLVM C and C++ code
+(c-add-style "llvm.org"
+             '("gnu"
+	       (fill-column . 80)
+	       (c++-indent-level . 2)
+	       (c-basic-offset . 2)
+	       (indent-tabs-mode . nil)
+	       (c-offsets-alist . ((arglist-intro . ++)
+				   (innamespace . 0)
+(member-init-intro . ++)))))
