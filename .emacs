@@ -72,3 +72,10 @@
 	       (c-offsets-alist . ((arglist-intro . ++)
 				   (innamespace . 0)
 (member-init-intro . ++)))))
+
+;; Magit for emacs 
+;;M-x package-refresh RET
+;;M-x package-install RET magit RET
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
