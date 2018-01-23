@@ -87,3 +87,6 @@
   (enlarge-window (/ (window-height (next-window)) 2)))
 
 (global-set-key (kbd "C-c v") 'halve-other-window-height)
+
+;;Hide Welcome screen in emacs GUI
+(setq inhibit-startup-screen t)
